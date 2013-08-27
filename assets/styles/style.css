@@ -1,0 +1,542 @@
+@import url(normalize.css);
+@import url(font-awesome.css);
+/* Font Face */
+@font-face {
+  font-family: 'Karbon-Regular';
+  src: url("../fonts/karbon-regular.eot");
+  src: url("../fonts/karbon-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/karbon-regular.woff") format("woff"), url("../fonts/karbon-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'karbon-medium';
+  src: url("../fonts/karbon-medium.eot");
+  src: url("../fonts/karbon-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/karbon-medium.woff") format("woff"), url("../fonts/karbon-medium.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Karbon-Semibold';
+  src: url("../fonts/karbon-semibold.eot");
+  src: url("../fonts/karbon-semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/karbon-semibold.woff") format("woff"), url("../fonts/karbon-semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'LucidaGrande';
+  src: url("../fonts/lucidagrande.eot");
+  src: url("../fonts/lucidagrande.eot?#iefix") format("embedded-opentype"), url("../fonts/lucidagrande.woff") format("woff"), url("../fonts/lucidagrande.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FrutigerNext_LT_Regular';
+  src: url("../fonts/FrutigerNext_LT_Regular.eot");
+  src: url("../fonts/FrutigerNext_LT_Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FrutigerNext_LT_Regular.woff") format("woff"), url("../fonts/FrutigerNext_LT_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'FrutigernextLTBold';
+  src: url("../fonts/frutigernext_lt_bold.eot");
+  src: url("../fonts/frutigernext_lt_bold.eot?#iefix") format("embedded-opentype"), url("../fonts/frutigernext_lt_bold.woff") format("woff"), url("../fonts/frutigernext_lt_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.half {
+  width: 50%;
+  float: left; }
+
+.quarter {
+  width: 25%;
+  float: left;
+  padding: 20px; }
+
+.quarter-child {
+  width: 50%;
+  float: left;
+  padding: 20px; }
+
+.one {
+  width: 8.33333%; }
+
+.two {
+  width: 16.66667%; }
+
+.three {
+  width: 25%; }
+
+.four {
+  width: 33.33333%; }
+
+.five {
+  width: 41.66667%; }
+
+.six {
+  width: 50%; }
+
+.seven {
+  width: 58.33333%; }
+
+.eight {
+  width: 66.66667%; }
+
+.nine {
+  width: 75%; }
+
+.ten {
+  width: 83.33333%; }
+
+.eleven {
+  width: 91.66667%; }
+
+.twelve {
+  width: 100%; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.align-center {
+  text-align: center; }
+
+.clear {
+  clear: both; }
+
+.width-full {
+  width: 100%; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-size: 16px;
+  font-family: "FrutigerNext_LT_Regular", sans-serif;
+  background-color: #fff;
+  color: #666666;
+  line-height: 1.35em;
+  margin: 0;
+  padding: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1em;
+  margin: 15px 0;
+  padding: 0;
+  color: #333333; }
+
+h1:first-child, h2:first-child, h3:first-child, h4:first-child {
+  margin-top: 0; }
+
+h1 {
+  font-family: "Karbon-Regular", "Univers", Helvetica, Arial, sans-serif;
+  font-size: 3em;
+  margin-bottom: 25px; }
+
+h2 {
+  font-family: "Karbon-Regular", "Univers", Helvetica, Arial, sans-serif;
+  font-size: 2.1875em; }
+
+h3 {
+  font-family: "Karbon-Regular", "Univers", Helvetica, Arial, sans-serif;
+  font-size: 2em; }
+
+h4 {
+  font-family: "Karbon-Regular", "Univers", Helvetica, Arial, sans-serif;
+  font-size: 1.875em;
+  color: #113457; }
+
+h5 {
+  font-family: "FrutigerNext_LT_Regular", sans-serif;
+  font-size: 1.25em; }
+
+h6 {
+  font-family: "FrutigerNext_LT_Regular", sans-serif;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin: 0; }
+
+p {
+  margin: 0 0 20px 0;
+  line-height: 1.35em; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%; }
+
+a, a:visited, .kony-blue {
+  color: #006cc3;
+  text-decoration: none; }
+
+a:hover, a:active {
+  color: #0085f1; }
+
+/* Kony Studio Welcome page CSS */
+header {
+  background: #113457; }
+  header #logo {
+    margin: 20px 0 0; }
+  header nav.utility-nav {
+    margin: 17px 16px 0 0; }
+    header nav.utility-nav ul {
+      float: left; }
+      header nav.utility-nav ul li {
+        float: left;
+        padding: 0 16px;
+        border-left: solid 1px #e9e9e9;
+        line-height: 1; }
+        header nav.utility-nav ul li:first-child {
+          border-left: none; }
+        header nav.utility-nav ul li a {
+          float: left;
+          font: 1em "FrutigernextLTBold", sans-serif;
+          text-decoration: none;
+          padding: 0;
+          color: #e8e8e8; }
+          header nav.utility-nav ul li a:hover {
+            background: none;
+            color: #e9e9e9; }
+  header nav {
+    clear: right;
+    margin: 15px 0 0; }
+    header nav ul.menu li {
+      float: left; }
+      header nav ul.menu li a {
+        float: left;
+        color: #fff;
+        font: 1em "FrutigerNext_LT_Regular", sans-serif;
+        padding: 15px;
+        text-decoration: none; }
+        header nav ul.menu li a:hover {
+          color: #113457;
+          background: #eee; }
+
+/* Search Field CSS */
+#search-form {
+  position: relative;
+  width: 255px;
+  float: left;
+  top: -4px; }
+  #search-form .searchbox {
+    background: #fff;
+    position: absolute;
+    width: 255px;
+    height: 27px;
+    border: 1px solid #c2c2c2; }
+  #search-form .search_button {
+    border: none;
+    background: white url(../images/search_box.png) no-repeat left center;
+    position: absolute;
+    top: 6px;
+    right: 7px;
+    width: 14px;
+    height: 14px; }
+
+/* Logout */
+.logout_button {
+  color: #fff;
+  text-align: center;
+  float: right;
+  padding: 6px 30px;
+  margin: -4px 0 0 20px;
+  font: 0.875em "karbon-medium", "Univers", Helvetica, Arial, sans-serif;
+  background: #767676;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIxJSIgc3RvcC1jb2xvcj0iIzc2NzY3NiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM1YzVjNWMiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-linear-gradient(top, #767676 1%, #5c5c5c 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #767676), color-stop(100%, #5c5c5c));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #767676 1%, #5c5c5c 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #767676 1%, #5c5c5c 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #767676 1%, #5c5c5c 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #767676 1%, #5c5c5c 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#767676', endColorstr='#5c5c5c',GradientType=0 );
+  /* IE6-8 */ }
+  .logout_button:visited {
+    color: #fff; }
+
+/* Main Contet CSS */
+.main-content {
+  padding: 30px 0;
+  background: url(../images/bg-main-content.jpg) repeat-x left top;
+  float: left;
+  width: 100%; }
+  .main-content h1 {
+    line-height: 0.5em; }
+    .main-content h1 span {
+      font: 0.417em/1em "FrutigerNext_LT_Regular", sans-serif;
+      color: #333;
+      display: inline-block; }
+  .main-content ul {
+    margin: 0 0 15px 30px; }
+    .main-content ul li {
+      list-style-type: disc;
+      line-height: 1.5; }
+
+/* Events page CSS */
+.events {
+  padding: 15px 0; }
+  .events .upcomming-events ul, .events .upcomming-webinars ul {
+    margin-left: 0px; }
+    .events .upcomming-events ul li, .events .upcomming-webinars ul li {
+      margin-bottom: 40px;
+      color: #666;
+      font-size: 1.125em;
+      list-style-type: none; }
+      .events .upcomming-events ul li a, .events .upcomming-webinars ul li a {
+        text-decoration: none; }
+      .events .upcomming-events ul li .author-details, .events .upcomming-webinars ul li .author-details {
+        color: #666;
+        display: block; }
+        .events .upcomming-events ul li .author-details .author-name, .events .upcomming-webinars ul li .author-details .author-name {
+          font-size: 0.78125em;
+          display: block; }
+  .events .upcomming-events {
+    padding-right: 30px; }
+
+/* Resources Detail page CSS */
+aside.aside-resources .social-media {
+  margin: 0 0 20px; }
+  aside.aside-resources .social-media li {
+    margin: 0 3px; }
+    aside.aside-resources .social-media li a {
+      color: #666; }
+      aside.aside-resources .social-media li a .icon-stack .icon-stack-base {
+        font-size: 2em !important; }
+      aside.aside-resources .social-media li a .icon-light {
+        font-size: 1em !important; }
+aside.aside-resources .share {
+  font-size: 0.875em;
+  display: block; }
+aside.aside-resources p {
+  margin-bottom: 30px; }
+aside.aside-resources .glance-box {
+  border: 1px solid #939393;
+  padding: 15px;
+  margin-bottom: 30px; }
+  aside.aside-resources .glance-box p {
+    margin-bottom: 15px; }
+  aside.aside-resources .glance-box ul {
+    margin: 0 0 0 15px; }
+aside.aside-resources blockquote {
+  background: #d7d7d7;
+  font-size: 1.125em;
+  color: #113457;
+  padding: 15px;
+  margin: 0; }
+  aside.aside-resources blockquote cite {
+    font-style: normal;
+    font-size: 0.889em; }
+
+.resources-content {
+  padding: 0 0 0 70px; }
+
+.special-text {
+  font-size: 0.75em; }
+
+footer {
+  border-top: 1px solid #959595;
+  background: #f4f4f4;
+  padding: 30px 0 90px;
+  color: #808080;
+  clear: both;
+  font: 0.75em "FrutigerNext_LT_Regular", sans-serif;
+  background: #f4f4f4;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #f4f4f4 70%, #bfc0bf 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #f4f4f4), color-stop(100%, #bfc0bf));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #f4f4f4 70%, #bfc0bf 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #f4f4f4 70%, #bfc0bf 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #f4f4f4 70%, #bfc0bf 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #f4f4f4 70%, #bfc0bf 100%);
+  /* W3C */
+  float: left;
+  width: 100%; }
+  footer .half .nav-contact-info {
+    margin-bottom: 25px; }
+    footer .half .nav-contact-info ul {
+      color: #0476bd;
+      font: 21px "FrutigerNext_LT_Regular", sans-serif; }
+      footer .half .nav-contact-info ul li {
+        float: left;
+        padding: 0 12px;
+        border-left: 1px solid #0476bd; }
+        footer .half .nav-contact-info ul li:first-child {
+          border: none;
+          padding-left: 0; }
+        footer .half .nav-contact-info ul li a {
+          color: #0476bd;
+          font: 0.875em "FrutigerNext_LT_Regular", sans-serif;
+          float: left; }
+  footer .half .footer-nav li {
+    float: left;
+    padding: 0 7px;
+    border-left: 1px solid #a7a7a7;
+    line-height: 1; }
+    footer .half .footer-nav li:first-child {
+      border: none;
+      padding-left: 0; }
+  footer .half a {
+    text-decoration: none; }
+  footer .copyrights {
+    display: inline-block;
+    margin: 7px 0; }
+
+.social-media li {
+  display: inline-block;
+  margin: 0 6px; }
+  .social-media li a {
+    color: #666; }
+    .social-media li a .icon-stack .icon-stack-base {
+      font-size: 2.4em !important; }
+    .social-media li a .icon-light {
+      font-size: 1.4em !important; }
+
+/* Button CSS */
+input[type="submit"], input[type="button"] {
+  margin-top: 10px; }
+
+.button, input[type="submit"], input[type="button"] {
+  color: #fff;
+  background: #0476bd;
+  padding: 12px 40px;
+  text-decoration: none;
+  display: inline-block;
+  font-family: "FrutigernextLTBold", sans-serif;
+  border: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px; }
+  .button i, input[type="submit"] i, input[type="button"] i {
+    margin-left: 7px; }
+  .button:hover, .button:visited, input[type="submit"]:hover, input[type="submit"]:visited, input[type="button"]:hover, input[type="button"]:visited {
+    color: #fff; }
+
+.pre-next-casestudies {
+  border-top: 1px solid #b8b8b8;
+  padding: 30px 0 0;
+  margin-top: 30px; }
+  .pre-next-casestudies .casestudy {
+    padding: 0 30px;
+    border-left: 1px solid #b8b8b8; }
+    .pre-next-casestudies .casestudy:first-child {
+      border: none; }
+    .pre-next-casestudies .casestudy a {
+      font: 0.75em "FrutigernextLTBold", sans-serif;
+      text-decoration: none; }
+    .pre-next-casestudies .casestudy h4 {
+      font: 1.375em "Karbon-Regular", "Univers", Helvetica, Arial, sans-serif;
+      margin: 0;
+      color: #333; }
+
+.quick-tabs {
+  margin: 0 0 40px !important;
+  display: inline-block; }
+  .quick-tabs li {
+    float: left;
+    list-style-type: none !important; }
+    .quick-tabs li a {
+      float: left;
+      padding: 12px 19px;
+      border-bottom: 1px solid #b8b8b8;
+      text-decoration: none;
+      color: #666; }
+      .quick-tabs li a.active {
+        background: #fff;
+        font-family: "FrutigernextLTBold", sans-serif;
+        border: 1px solid #d9d9d9;
+        border-bottom: 1px solid #fff; }
+
+/* Resources Webinar CSS */
+.resources-webinar h2 {
+  font-size: 2.056em; }
+  .resources-webinar h2 strong {
+    font: 1em "Karbon-Semibold", "Univers", Helvetica, Arial, sans-serif; }
+.resources-webinar .resources-webinar-content {
+  font-size: 1.125em;
+  margin-bottom: 30px; }
+
+.resources-webinar h3, .aside-resources-webinar h3 {
+  font: 1.5em "karbon-medium", "Univers", Helvetica, Arial, sans-serif;
+  margin: 0 0 15px; }
+  .resources-webinar h3 i, .aside-resources-webinar h3 i {
+    display: inline-block;
+    margin-right: 10px; }
+
+.main-content .kony-feature-blog-categories ul, .main-content .kony-feature-blog-archives ul {
+  margin: -15px 0 30px 40px; }
+  .main-content .kony-feature-blog-categories ul li, .main-content .kony-feature-blog-archives ul li {
+    list-style-type: none;
+    font-size: 1.125em;
+    margin-bottom: 5px; }
+
+/* Blog Page CSS */
+.blog-auther img {
+  float: left;
+  width: 63px;
+  height: 67px; }
+.blog-auther .auther {
+  padding: 26px 84px; }
+
+.webinar-auther img {
+  float: left;
+  width: 63px;
+  height: 67px; }
+.webinar-auther .auther {
+  padding: 20px 84px 10px; }
+
+/* Form CSS */
+form {
+  font-size: 0.875em; }
+  form .row {
+    margin-bottom: 10px; }
+  form label {
+    display: inline-block;
+    text-align: right;
+    width: 70px;
+    margin-right: 15px; }
+  form input, form textarea {
+    border: 1px solid #bababa;
+    background: #fff;
+    padding: 5px;
+    font-size: 1em;
+    color: #666; }
+
+.inputtextbox {
+  border: 1px solid #bababa;
+  background: #fff;
+  padding: 5px;
+  font-size: 1em;
+  color: #666;
+  display: inline-block; }
+
+.register form {
+  border: 1px solid #c7c7c7;
+  padding: 15px;
+  margin-bottom: 20px; }
+  .register form label {
+    font-weight: bold;
+    width: 198px; }

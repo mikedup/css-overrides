@@ -1,0 +1,20 @@
+.form-box { border: 1px solid #eaeaea; margin: 0 auto; max-width: 500px; padding: 30px; }
+.form-box p { color: #777; line-height: 1.2em; }
+.form-box form { padding: 20px 0 30px 0; }
+.form-box-row { clear: both; display: block; float: left; padding: 5px 0; width: 100%; }
+.form-box-row b { display: block; float: left; font-size: 14px; padding: 10px 10px 10px 0; text-align: right; width: 30%; }
+.form-box-row input { border: 1px solid #ccc; display: block; float: left; font-family: FrutigerNextW01-Regular, sans-serif; font-size: 14px; padding: 5px 7px; width: 70%; }
+.form-box-footer { background: #f0f0f0; border-top: 1px solid #eaeaea; clear: both; margin: 0 -30px -30px -30px; padding: 30px; }
+.form-box-footer .konyButton { float: right; }
+.form-box-footer .login-redirect { float: left; font-size: 14px; padding-top: 10px;}
+
+/* Clear floats */
+.form-box form:after, .form-box-footer:after { visibility: hidden; display: block; content: ""; clear: both; height: 0; }
+
+/* Mobile breakpoint */
+@media only screen and (max-width: 480px) { 
+  .form-box-row b { padding-right: 0; text-align: left; width: 100%; }
+  .form-box-row input { width: 100%; }
+  .form-box-footer .konyButton { width: 100%; }
+  .form-box-footer .login-redirect { padding-top: 15px; }
+}

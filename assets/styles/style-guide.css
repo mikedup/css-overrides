@@ -1,0 +1,87 @@
+/**
+ * Style Guide CSS
+ *
+ * Includes a library of styles that should only be included on the style guide page
+ */
+
+.styleGuide-annotation {
+  background-color: rgba(125, 179, 229, 0.5);
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #1c3247;
+  text-shadow: 0 1px rgba(255, 255, 255, 0.6);
+}
+
+.styleGuide-outline {
+  list-style-position: inside;
+  list-style: decimal;
+}
+
+.styleGuide-outline-nested {
+  list-style-position: inside;
+  list-style: lower-alpha;
+  margin-left: 15px;
+}
+
+.styleGuide-codeExample {
+  margin-bottom: 20px;
+}
+
+.styleGuide-codeExample-hd {
+  margin-bottom: 10px;
+}
+
+.styleGuide-codeExample-bd > p {
+  margin: 5px 0;
+}
+
+.styleGuide-code {
+  font-family: monospace;
+  font-size: 13px;
+  border: 1px solid #bbbbbb;
+  background: #eeeeee;
+  border-left: 4px solid #aaaaaa;
+  padding: 12px 20px;
+  margin: 5px 0;
+}
+
+.styleGuide-code_good {
+  background: #e7f8e4;
+  border-left-color: #32af1e;
+}
+
+.styleGuide-code_bad {
+  background: #ffe8e8;
+  border-left-color: #f97471;
+}
+
+.styleGuide-bulletList {
+  list-style: square;
+  list-style-position: inside;
+  margin-left: 15px;
+}
+
+.styleGuide-block {
+  background: #aaccee;
+  height: 20px;
+  margin-bottom: 10px;
+}
+
+.styleGuide-table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+.styleGuide-table td {
+  vertical-align: middle;
+}
+
+.styleGuide-table td + td {
+  padding-left: 20px;
+}
+
+.styleGuide-top,
+td.styleGuide-top {
+  vertical-align: top;
+}
